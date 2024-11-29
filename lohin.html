@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <script src="practical_4.js" ></script>
+    <style>
+        .error { border: 3px red solid; }
+        .success { border: 3px green solid; }
+    </style>
+</head>
+<body>
+    <h3>Registration Form</h3>
+    <form onsubmit="validate();return false" >
+
+
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"/>
+        </div>
+    
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"/>
+        </div>
+
+        
+        <div>
+            <label for="dob">Age:</label>
+            <input type="number" id="dob" name="dob"/>
+        </div>
+
+        <div>
+            <label for="gender" id="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        
+        <div>
+    <div>
+      <span id="country-label">Country:</span>
+      <select id="country-select">
+          <option value="">Select a country</option>
+          <option value="china">China</option>
+          <option value="usa">USA</option>
+          <option value="uk">UK</option>
+          <option value="ua">UA</option>
+      </select> 
+    </div>
+
+      <div>
+        <label for="hobbies">Hobbies:</label>
+        <textarea id="hobbies" name="hobbies"></textarea>
+      </div>
+
+        <div>
+            <input type="checkbox" id="newsletter" name="newsletter" >
+            <label for="newsletter">Check it if you want to receive newsletter</label>
+        </div>
+
+        <div>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </div>
+
+        <div id="error" style="color: red;"></div>
+        <div id="success" style="color: green;"></div>
+
+    </form>
+</body>
+</html>
